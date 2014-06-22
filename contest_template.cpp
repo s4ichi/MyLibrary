@@ -32,7 +32,7 @@
 using namespace std;
 
 //-------------inline
-inline int toInt(string s) {int v; istringstream sin(s);sin>>v;return v;}
+inline int toInt(string s) {int v; istringstream istr(s);istr>>v;return v;}
 template<class T> inline string toString(T x) {ostringstream sout;sout<<x;return sout.str();}
 
 //-------------typedef
@@ -48,6 +48,7 @@ int dy[]={1,0,-1,0,1,-1,1,-1};
 
 int main()
 {
+  ios_base::sync_with_stdio(false);
 
 
   return 0;
