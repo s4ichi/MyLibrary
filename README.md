@@ -12,15 +12,15 @@ DUMPなどは置いていませんが、書き足せばたぶん走ります。
 
 置いてあるもの
 ---------
-##Tree
+###Tree
 RangeMinimumQuery
 LowestCommonAncestor
 UnionFind
 
-##Graph
+###Graph
 StrongluConnectedComponents
 
-##Other
+###Other
 
 ライセンス
 ---------
