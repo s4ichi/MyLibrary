@@ -13,9 +13,9 @@ DUMPなどは置いていませんが、書き足せばたぶん走ります。
 置いてあるもの
 ---------
 ###Tree
-RangeMinimumQuery
-LowestCommonAncestor
-UnionFind
+RangeMinimumQuery<br>
+LowestCommonAncestor<br>
+UnionFind<br>
 
 ###Graph
 StrongluConnectedComponents
