@@ -1,4 +1,4 @@
-/* 交差判定 */
+/* 交差判定、交差点取得 */
 //----------------------------------------------------------
 /// 定義群
 #include <vector>
@@ -41,5 +41,14 @@ bool intersectSS(const Line& u, const Line& v) {
 /// 直線lと線分sの交差判定
 bool intersectLS(const Line& l, const Line& s) {
 	return cross(l[0]-l[1], l[0]-s[0]) * cross(l[0]-l[1], l[0]-s[1]) < EPS;
+}
+//----------------------------------------------------------
+/// 直線l, mの交差点を取得
+Point crossPoint(const Line& l, const Line& m) {
+	double a = cross(l[1]-l[0], m[1]-m[0]);
+	double b = cross(l[1]-l[0], l[1]-m[0]);
+	if( abs(a) < EPS && abs(b) < EPS )  return m[0];
+//	if( abs(a) < EPS ) HALT;
+	return m[0] + b / a * (m[1] - m[0]);
 }
 
