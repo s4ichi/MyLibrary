@@ -20,6 +20,9 @@ UnionFind<br>
 ###Graph
 StrongluConnectedComponents
 
+###Sort
+MergeSort
+
 ###Other
 
 ライセンス
