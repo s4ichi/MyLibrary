@@ -24,6 +24,7 @@ StrongluConnectedComponents
 MergeSort
 
 ###Other
+Matrix
 
 ライセンス
 ---------
