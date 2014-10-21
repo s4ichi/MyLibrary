@@ -24,7 +24,7 @@ StrongluConnectedComponents
 MergeSort
 
 ###Other
-Matrix
+MatrixFib
 
 ライセンス
 ---------
