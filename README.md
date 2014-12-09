@@ -23,8 +23,11 @@ StrongluConnectedComponents
 ###Sort
 MergeSort
 
-###Other
-MatrixFib
+###Geometry
+Fib(Matrix)
+Cross
+Dot
+IntersectedLine
 
 ライセンス
 ---------
