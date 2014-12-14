@@ -1,4 +1,4 @@
-Buttle Programming Library
+Battle Programming Library
 =========================
 各種コンテストで使用する競技プログラミング用ライブラリです。
 コピペはご自由にどうぞ。ただしバグの保証はしません。
