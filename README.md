@@ -1,4 +1,4 @@
-Buttle Programming Library
+Battle Programming Library
 =========================
 各種コンテストで使用する競技プログラミング用ライブラリです。
 コピペはご自由にどうぞ。ただしバグの保証はしません。
@@ -13,9 +13,9 @@ DUMPなどは置いていませんが、書き足せばたぶん走ります。
 置いてあるもの
 ---------
 ###Tree
-RangeMinimumQuery<br>
-LowestCommonAncestor<br>
-UnionFind<br>
+RangeMinimumQuery  
+LowestCommonAncestor  
+UnionFind  
 
 ###Graph
 StrongluConnectedComponents
@@ -24,9 +24,9 @@ StrongluConnectedComponents
 MergeSort
 
 ###Geometry
-Fib(Matrix)
-Cross
-Dot
+Fib(Matrix)  
+Cross  
+Dot  
 IntersectedLine
 
 ライセンス
