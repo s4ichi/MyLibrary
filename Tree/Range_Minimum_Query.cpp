@@ -1,5 +1,4 @@
-#define INt_MAX 0xfffff;
-
+//require INT_MAX
 struct RMQ{
   int size;
   vector<int> val;
