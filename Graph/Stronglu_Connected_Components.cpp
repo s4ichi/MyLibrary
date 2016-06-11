@@ -1,45 +1,51 @@
-#define MAX_V 10000
+// test: uva 11054
 
-struct scc{
-  int V;
-  vector<int> g[MAX_V],rg[MAX_V],re;
-  bool f[MAX_V];
-  int cmp[MAX_V];
+/*
+  #define MAX_V 1000
+  SCC<MAX_V> scc(current_size);
+*/
 
-  scc(int v):V(v){};
+template<int V>
+struct SCC {
+	int size;
+	vector<int> g[V],rg[V],re;
+	bool f[V];
+	int cmp[V];
 
-  void add(int f,int t){
-    g[f].push_back(t);
-    rg[t].push_back(f);
-  }
+	SCC(int v):size(v) {};
 
-  void DFS(int v){
-    f[v]=true;
-    for(int i=0;i<g[v].size();i++){
-      if(!f[g[v][i]])DFS(g[v][i]);
-    }
-    re.push_back(v);
-  }
+	void add(int f,int t){
+		g[f].push_back(t);
+		rg[t].push_back(f);
+	}
 
-  void RDFS(int v,int k){
-    f[v]=true;
-    cmp[v]=k;
-    for(int i=0;i<rg[v].size();i++){
-      if(!f[rg[v][i]])RDFS(rg[v][i],k);
-    }
-  }
+	void DFS(int v){
+		f[v]=true;
+		for(int i=0;i<g[v].size();i++){
+			if(!f[g[v][i]])DFS(g[v][i]);
+		}
+		re.push_back(v);
+	}
 
-  int build(){
-    memset(f,false,sizeof(f));
-    re.clear();
-    for(int v=0;v<V;v++){
-      if(!f[v])DFS(v);
-    }
-    memset(f,false,sizeof(f));
-    int k=0;
-    for(int i=re.size()-1;i>=0;i--){
-      if(!f[re[i]])RDFS(re[i],k++);
-    }
-    return k;
-  }
+	void RDFS(int v,int k){
+		f[v]=true;
+		cmp[v]=k;
+		for(int i=0;i<rg[v].size();i++){
+			if(!f[rg[v][i]])RDFS(rg[v][i],k);
+		}
+	}
+
+	int build(){
+		memset(f,false,sizeof(f));
+		re.clear();
+		for(int v=0;v<size;v++){
+			if(!f[v])DFS(v);
+		}
+		memset(f,false,sizeof(f));
+		int k=0;
+		for(int i=re.size()-1;i>=0;i--){
+			if(!f[re[i]])RDFS(re[i],k++);
+		}
+		return k;
+	}
 };
