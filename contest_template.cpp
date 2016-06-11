@@ -48,8 +48,6 @@ int dy[]={1,0,-1,0,1,-1,1,-1};
 
 int main()
 {
-  ios_base::sync_with_stdio(false);
 
-
-  return 0;
+	return 0;
 }
