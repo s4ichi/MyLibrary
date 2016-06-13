@@ -47,7 +47,7 @@ struct Bridge {
 		return low[cur];
 	}
 
-    void build(int n) {
+	void build(int n) {
 		for (int i=0; i<n; i++) {
 			if (!pre[i]) dfs(i, i);
 		}
