@@ -17,6 +17,7 @@ free to use.
 - Dinic
 - Topological sort (sample)
 - Bipatite (sample)
+- Bridge
 
 ### Sort
 - MergeSort
