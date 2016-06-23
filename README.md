@@ -9,10 +9,11 @@ free to use.
 
 - Range minimum query
 - Lowest common ancestor
-- Union find
 
 ### Graph
 
+- Union find
+- Dijkstra
 - Stronglu connected components
 - Dinic
 - Topological sort (sample)
