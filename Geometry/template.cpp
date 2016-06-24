@@ -1,27 +1,24 @@
-//点と線
 typedef double POINT_TYPE
 typedef pair<POINT_TYPE, POINT_TYPE> point;
-typedef pair<point, point > line;
+typedef pair<point, point> line;
 
-//外積
 POINT_TYPE cross(Point a, Point b) {
-  return (a.fi * b.se - a.se * b.fi);
+	return (a.fi * b.se - a.se * b.fi);
 }
 
-//内積
 POINT_TYPE dot(Point a, Point b) {
-  return (a.fi * b.fi + a.se * b.se);
+	return (a.fi * b.fi + a.se * b.se);
 }
 
-//線分の差
 point dist(point a, point b)
 {
-  return point(a.fi - b.fi, a.se - b.se);
+	return point(a.fi - b.fi, a.se - b.se);
 }
 
-//線分の交差判定
 bool is_cross(line a, line b)
 {
-  return (((cross(dist(a.se, a.fi), dist(b.fi, a.fi))) * (cross(dist(a.se, a.fi), dist(b.se, a.fi)))) <= 0) && (((cross(dist(b.se, b.fi), dist(a.fi, b.fi))) * (cross(dist(b.se, b.fi), dist(a.se, b.fi)))) <= 0);
+	return (((cross(dist(a.se, a.fi), dist(b.fi, a.fi))) *
+			 (cross(dist(a.se, a.fi), dist(b.se, a.fi)))) <= 0) &&
+		(((cross(dist(b.se, b.fi), dist(a.fi, b.fi))) *
+		  (cross(dist(b.se, b.fi), dist(a.se, b.fi)))) <= 0);
 }
-
