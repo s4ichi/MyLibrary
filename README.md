@@ -3,6 +3,17 @@ Battle Programming Library
 
 free to use.
 
+## Create pdf file
+You should install `enscript` and `pstopdf`.
+
+```sh
+$ git clone https://github.com/Everysick/MyLibrary.git
+$ cd MyLibrary
+$ bash ./convert_ps
+$ open library.pdf
+
+```
+
 ## List
 
 ### Tree
