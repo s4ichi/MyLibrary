@@ -15,7 +15,8 @@ else
 fi
 
 touch tmp.cpp
-echo "// My library \n // contest template" >> tmp.cpp
+echo "// My library" >> tmp.cpp
+echo "// contest template" >> tmp.cpp
 cat contest_template.cpp >> tmp.cpp
 
 for dir in *; do
@@ -24,9 +25,11 @@ for dir in *; do
 
         cd ${dir}
         for i in *.cpp; do
-            echo "// ${dir}\n" >> ../tmp_${dir}.cpp
+            echo "// ${dir}" >> ../tmp_${dir}.cpp
+            echo "// ${i}" >> ../tmp_${dir}.cpp
             cat ${i} >> ../tmp_${dir}.cpp
-            echo "\n\n" >> ../tmp_${dir}.cpp
+            echo "----------------------------------------------------" >> ../tmp_${dir}.cpp
+            echo "" >> ../tmp_${dir}.cpp
         done
         cd ..
     fi
