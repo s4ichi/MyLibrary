@@ -1,8 +1,6 @@
 Battle Programming Library
 =========================
 
-free to use.
-
 ## Create pdf file
 You should install `enscript` and `pstopdf`.
 
@@ -43,3 +41,9 @@ $ open library.pdf
 
 ## template
 - contest_template.cpp
+
+## LICENSE
+MIT
+
+## Author
+takamasa saichi (a.k.a everysick)
